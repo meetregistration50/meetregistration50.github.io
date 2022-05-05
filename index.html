@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registrationForm.css">
+</head>
+
+<body>
+
+    <!-- 
+    <div class="selectsDiv1" id="selectsDiv1">
+        <div id="selects1">
+            <select name="competitionName" id="competitionName" class="selects">
+                <option disabled selected>შეჯიბრების დასახელება</option>
+                <option>საქართველოს ზამთრის ღია ჩემპიონატი</option>
+                <option>ფედერაციის თასის გათამაშება და ასაკობრივი პირველობა</option>
+                <option>'გაზაფხულის თასის' გათამაშება უმცროს ასაკში</option>
+                <option>'გაზაფხულის თასის' გათამაშება უფროს ასაკში</option>
+                <option>საქართველოს ნაკრები გუნდის ტესტირება</option>
+                <option>საქართველოს გაზაფხულის ღია ჩემპიონატი</option>
+                <option>საქართველოს ზაფხულის ღია ჩემპიონატი</option>
+                <option>საქართველოს ზაფხულის ღია ჩემპიონატი ფინალი</option>
+                <option>საქართველოს შემოდგომის ღია ჩემპიონატი</option>
+                <option>თბილისის მერიის თასის ღია გათამაშება1</option>
+                <option>თბილისის მერიის თასის ღია გათამაშება2</option>
+                <option>სახელი #1</option>
+            </select>
+            <select name="year" id="year" class="selects">
+                <option disabled selected>წელი</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+            </select>
+
+        </div>
+        <button id="button1" class="button">შემდეგი</button>
+    </div>
+    -->
+    <div class="timeOpc" id="timeshadow"></div>
+    <div class="timeOpc" id="time">
+      <div class="time" id="date"></div>
+      <div class="time" id="clock"></div>
+    </div>
+    
+    <div class="hide" id="signInForm">
+      <fieldset>
+      <legend>სისტემაში შესვლა:</legend>
+      <div id="photo"></div>
+      <label class="regData">სახელი:</label>
+      <input class="regData regInputs1" id="id" type="text"><br><br>
+      <label class="regData">პაროლი:</label>
+      <input class="regData regInputs1" id="password" type="password"><br><br>
+      <input id="submit" type="submit" value="შესვლა">
+    </fieldset>
+    </div>
+    
+    <div id="selectDivShadow" class="hide"></div>
+    <div id="selectsDiv2" class="selectsDiv2 hide">
+        <div id="selects2" class="selects2">
+            <select name="distance" id="distance" class="selects">
+                <option disabled selected>დისტანცია</option>
+                <option>50</option>
+                <option>100</option>
+                <option>200</option>
+                <option>400</option>
+                <option>800</option>
+                <option>1500</option>
+            </select>
+            <select name="style" id="style" class="selects">
+                <option disabled selected>ცურვის სტილი</option>
+                <option>ბატერფლაი</option>
+                <option>გულაღმა</option>
+                <option>ბრასი</option>
+                <option>თავისუფალი</option>
+                <option>კომპლექსი</option>
+            </select>
+        </div>
+        <input placeholder="გვარი სახელი" id='swimmerName' />
+        <button id="registration" class="button">დამატება</button>
+        <div id='choice'></div>
+        <div id="code"></div>
+       
+    </div>
+
+    <button id="back1" class="button hide">უკან დაბრუნება</button>
+
+    <div id='page3' class='hide'></div>
+    <div id='shortRes'></div>
+    <div id="helper"></div>
+    <button id='clickkk' class="hide">შემდეგი</button>
+    
+     <!-- axali "https://formspree.io/f/mknypadp"  geucup20221@gmail.com-->
+     <!-- Zveli "https://formspree.io/f/mwkywjlg"-->
+
+    <div id="container1" class="container1 hide">
+        <form action="https://formspree.io/f/mknypadp" method="POST">
+    
+          <div class="form-group">
+            <label for="firstName">გვარი და სახელი:</label>
+            <input type="text" id="firstName" class="regInputs" name="firstName">
+          </div>
+    
+          <div class="form-group">
+            <label for="latsName">მობ. ნომერი:</label>
+            <input type="text" id="lastName" class="regInputs" name="lastName">
+          </div>
+    
+          <div class="form-group">
+            <label for="email">იმეილი:</label>
+            <input type="email" id="email" class="regInputs" name="email">
+          </div>
+    
+          <div class="form-group" class="hide">
+            <label for="massage" class="hide">მესიჯი</label>
+            <textarea name="massage" id="massage" cols="30" rows="10" class="hide"></textarea>
+          </div>
+    
+          <button type="submit" id="regButton" class="regButton hide">რეგისტრაცია</button>
+        </form>
+      </div>
+
+      <button id="falseReg" class="hide">რეგისტრაცია</button>
+      <button id="back2" class="button hide">უკან დაბრუნება</button>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="nameslist.js"></script>
+    <script src="results.js"></script>
+    <script src="registrationForm.js"></script>
+</body>
+
+</html>
